@@ -11,8 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** The class to hold the tag result
-
- * Updated by JCasGen Sun Oct 14 18:24:46 EDT 2012
+ * Updated by JCasGen Mon Oct 15 01:12:37 EDT 2012
  * XML source: /Users/mimighostipad/git/yuchent_hw1/hw1_yuchent/src/main/resources/descriptors/typeSystemDescriptorHW1.xml
  * @generated */
 public class GeneTag extends Annotation {
@@ -64,21 +63,57 @@ public class GeneTag extends Annotation {
  
     
   //*--------------*
-  //* Feature: gene
+  //* Feature: location
 
-  /** getter for gene - gets The name of the gene
+  /** getter for location - gets Line number of this gene
    * @generated */
-  public String getGene() {
-    if (GeneTag_Type.featOkTst && ((GeneTag_Type)jcasType).casFeat_gene == null)
-      jcasType.jcas.throwFeatMissing("gene", "hw1.GeneTag");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((GeneTag_Type)jcasType).casFeatCode_gene);}
+  public String getLocation() {
+    if (GeneTag_Type.featOkTst && ((GeneTag_Type)jcasType).casFeat_location == null)
+      jcasType.jcas.throwFeatMissing("location", "hw1.GeneTag");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((GeneTag_Type)jcasType).casFeatCode_location);}
     
-  /** setter for gene - sets The name of the gene 
+  /** setter for location - sets Line number of this gene 
    * @generated */
-  public void setGene(String v) {
-    if (GeneTag_Type.featOkTst && ((GeneTag_Type)jcasType).casFeat_gene == null)
-      jcasType.jcas.throwFeatMissing("gene", "hw1.GeneTag");
-    jcasType.ll_cas.ll_setStringValue(addr, ((GeneTag_Type)jcasType).casFeatCode_gene, v);}    
+  public void setLocation(String v) {
+    if (GeneTag_Type.featOkTst && ((GeneTag_Type)jcasType).casFeat_location == null)
+      jcasType.jcas.throwFeatMissing("location", "hw1.GeneTag");
+    jcasType.ll_cas.ll_setStringValue(addr, ((GeneTag_Type)jcasType).casFeatCode_location, v);}    
+   
+    
+  //*--------------*
+  //* Feature: nbegin
+
+  /** getter for nbegin - gets begin index in a line
+   * @generated */
+  public int getNbegin() {
+    if (GeneTag_Type.featOkTst && ((GeneTag_Type)jcasType).casFeat_nbegin == null)
+      jcasType.jcas.throwFeatMissing("nbegin", "hw1.GeneTag");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((GeneTag_Type)jcasType).casFeatCode_nbegin);}
+    
+  /** setter for nbegin - sets begin index in a line 
+   * @generated */
+  public void setNbegin(int v) {
+    if (GeneTag_Type.featOkTst && ((GeneTag_Type)jcasType).casFeat_nbegin == null)
+      jcasType.jcas.throwFeatMissing("nbegin", "hw1.GeneTag");
+    jcasType.ll_cas.ll_setIntValue(addr, ((GeneTag_Type)jcasType).casFeatCode_nbegin, v);}    
+   
+    
+  //*--------------*
+  //* Feature: nend
+
+  /** getter for nend - gets end index of line
+   * @generated */
+  public int getNend() {
+    if (GeneTag_Type.featOkTst && ((GeneTag_Type)jcasType).casFeat_nend == null)
+      jcasType.jcas.throwFeatMissing("nend", "hw1.GeneTag");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((GeneTag_Type)jcasType).casFeatCode_nend);}
+    
+  /** setter for nend - sets end index of line 
+   * @generated */
+  public void setNend(int v) {
+    if (GeneTag_Type.featOkTst && ((GeneTag_Type)jcasType).casFeat_nend == null)
+      jcasType.jcas.throwFeatMissing("nend", "hw1.GeneTag");
+    jcasType.ll_cas.ll_setIntValue(addr, ((GeneTag_Type)jcasType).casFeatCode_nend, v);}    
   }
 
     

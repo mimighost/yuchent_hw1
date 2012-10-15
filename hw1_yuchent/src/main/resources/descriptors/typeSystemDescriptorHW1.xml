@@ -7,14 +7,23 @@
   <types>
     <typeDescription>
       <name>hw1.GeneTag</name>
-      <description>The class to hold the tag result
-</description>
+      <description>The class to hold the tag result</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
-          <name>gene</name>
-          <description>The name of the gene</description>
+          <name>location</name>
+          <description>Line number of this gene</description>
           <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>nbegin</name>
+          <description>begin index in a line</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>nend</name>
+          <description>end index of line</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>

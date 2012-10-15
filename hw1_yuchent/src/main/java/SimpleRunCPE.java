@@ -109,6 +109,7 @@ public class SimpleRunCPE extends Thread {
    *          Command line arguments - see class description
    */
   public static void main(String[] args) throws Exception {
+	 System.out.println("here");
     new SimpleRunCPE(args);
   }
 

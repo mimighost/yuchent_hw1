@@ -14,8 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** The class to hold the tag result
-
- * Updated by JCasGen Sun Oct 14 18:24:46 EDT 2012
+ * Updated by JCasGen Mon Oct 15 01:12:37 EDT 2012
  * @generated */
 public class GeneTag_Type extends Annotation_Type {
   /** @generated */
@@ -46,20 +45,56 @@ public class GeneTag_Type extends Annotation_Type {
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("hw1.GeneTag");
  
   /** @generated */
-  final Feature casFeat_gene;
+  final Feature casFeat_location;
   /** @generated */
-  final int     casFeatCode_gene;
+  final int     casFeatCode_location;
   /** @generated */ 
-  public String getGene(int addr) {
-        if (featOkTst && casFeat_gene == null)
-      jcas.throwFeatMissing("gene", "hw1.GeneTag");
-    return ll_cas.ll_getStringValue(addr, casFeatCode_gene);
+  public String getLocation(int addr) {
+        if (featOkTst && casFeat_location == null)
+      jcas.throwFeatMissing("location", "hw1.GeneTag");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_location);
   }
   /** @generated */    
-  public void setGene(int addr, String v) {
-        if (featOkTst && casFeat_gene == null)
-      jcas.throwFeatMissing("gene", "hw1.GeneTag");
-    ll_cas.ll_setStringValue(addr, casFeatCode_gene, v);}
+  public void setLocation(int addr, String v) {
+        if (featOkTst && casFeat_location == null)
+      jcas.throwFeatMissing("location", "hw1.GeneTag");
+    ll_cas.ll_setStringValue(addr, casFeatCode_location, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_nbegin;
+  /** @generated */
+  final int     casFeatCode_nbegin;
+  /** @generated */ 
+  public int getNbegin(int addr) {
+        if (featOkTst && casFeat_nbegin == null)
+      jcas.throwFeatMissing("nbegin", "hw1.GeneTag");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_nbegin);
+  }
+  /** @generated */    
+  public void setNbegin(int addr, int v) {
+        if (featOkTst && casFeat_nbegin == null)
+      jcas.throwFeatMissing("nbegin", "hw1.GeneTag");
+    ll_cas.ll_setIntValue(addr, casFeatCode_nbegin, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_nend;
+  /** @generated */
+  final int     casFeatCode_nend;
+  /** @generated */ 
+  public int getNend(int addr) {
+        if (featOkTst && casFeat_nend == null)
+      jcas.throwFeatMissing("nend", "hw1.GeneTag");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_nend);
+  }
+  /** @generated */    
+  public void setNend(int addr, int v) {
+        if (featOkTst && casFeat_nend == null)
+      jcas.throwFeatMissing("nend", "hw1.GeneTag");
+    ll_cas.ll_setIntValue(addr, casFeatCode_nend, v);}
     
   
 
@@ -72,8 +107,16 @@ public class GeneTag_Type extends Annotation_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_gene = jcas.getRequiredFeatureDE(casType, "gene", "uima.cas.String", featOkTst);
-    casFeatCode_gene  = (null == casFeat_gene) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_gene).getCode();
+    casFeat_location = jcas.getRequiredFeatureDE(casType, "location", "uima.cas.String", featOkTst);
+    casFeatCode_location  = (null == casFeat_location) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_location).getCode();
+
+ 
+    casFeat_nbegin = jcas.getRequiredFeatureDE(casType, "nbegin", "uima.cas.Integer", featOkTst);
+    casFeatCode_nbegin  = (null == casFeat_nbegin) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_nbegin).getCode();
+
+ 
+    casFeat_nend = jcas.getRequiredFeatureDE(casType, "nend", "uima.cas.Integer", featOkTst);
+    casFeatCode_nend  = (null == casFeat_nend) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_nend).getCode();
 
   }
 }
