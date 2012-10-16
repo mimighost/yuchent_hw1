@@ -15,6 +15,8 @@ import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 
+//import com.aliasi.chunk.HmmChunker;
+
 public class PosTagNamedEntityRecognizer {
 
   private StanfordCoreNLP pipeline;
@@ -52,4 +54,5 @@ public class PosTagNamedEntityRecognizer {
     }
     return begin2end;
   }
+  
 }
