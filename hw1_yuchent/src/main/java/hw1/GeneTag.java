@@ -11,8 +11,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** The class to hold the tag result
- * Updated by JCasGen Mon Oct 15 01:12:37 EDT 2012
- * XML source: /Users/mimighostipad/git/yuchent_hw1/hw1_yuchent/src/main/resources/descriptors/typeSystemDescriptorHW1.xml
+ * Updated by JCasGen Wed Oct 17 10:43:56 EDT 2012
+ * XML source: /Users/mimighostipad/git/yuchent_hw1/hw1_yuchent/src/main/resources/descriptors/AnnotationPrinter.xml
  * @generated */
 public class GeneTag extends Annotation {
   /** @generated

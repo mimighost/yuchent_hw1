@@ -26,7 +26,7 @@
     </configurationParameterSettings>
     <typeSystemDescription>
       <imports>
-        <import name="org.apache.uima.examples.SourceDocumentInformation"/>
+        <import name="descriptors.typeSystemDescriptorHW1"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>
@@ -34,7 +34,7 @@
     <capabilities>
       <capability>
         <inputs>
-          <type allAnnotatorFeatures="true">org.apache.uima.examples.SourceDocumentInformation</type>
+          <type allAnnotatorFeatures="true">hw1.SourceDocumentInformation</type>
         </inputs>
         <outputs/>
         <languagesSupported/>
