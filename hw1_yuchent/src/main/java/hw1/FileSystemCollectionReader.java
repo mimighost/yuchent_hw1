@@ -96,15 +96,19 @@ public class FileSystemCollectionReader extends CollectionReader_ImplBase {
     mCurrentIndex = 0;
 
     // if input directory does not exist or is not a directory, throw exception
+    /*
     if (!directory.exists() || !directory.isDirectory()) {
       throw new ResourceInitializationException(ResourceConfigurationException.DIRECTORY_NOT_FOUND,
               new Object[] { PARAM_INPUTDIR, this.getMetaData().getName(), directory.getPath() });
-    }
+    }*/
 
     // get list of files in the specified directory, and subdirectories if the
     // parameter PARAM_SUBDIR is set to True
-    mFiles = new ArrayList<File>();
-    addFilesFromDir(directory);
+    //mFiles = new ArrayList<File>();
+    //addFilesFromDir(directory);
+    if(directory.isFile()){
+    mFiles.add(directory);
+    }
   }
   
   /**
