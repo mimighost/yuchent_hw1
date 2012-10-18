@@ -20,7 +20,7 @@
       <nameValuePair>
         <name>outputFile</name>
         <value>
-          <string>/Users/mimighostipad/git/yuchent_hw1/hw1_yuchent/src/main/resources/output/output.txt</string>
+          <string>hw1-yuchent.out</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>

@@ -21,8 +21,19 @@ import com.aliasi.chunk.Chunker;
 import com.aliasi.chunk.Chunking;
 import com.aliasi.util.AbstractExternalizable;
 
+
+/**
+ * This class speicifies the logic of gene tagging using lingpipe 
+ * 
+ */
 public class GeneTagAnnotator extends JCasAnnotator_ImplBase {
 
+	
+	/**
+	 * the process a Jcas instance and output annotations 
+	 *
+	 * @param  arg0 Jcas contains the document
+	 */
 	@Override
 	public void process(JCas arg0) throws AnalysisEngineProcessException {
 		// TODO Auto-generated method stub
