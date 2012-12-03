@@ -39,7 +39,7 @@ public class GeneTagAnnotator extends JCasAnnotator_ImplBase {
 		// TODO Auto-generated method stub
 		try {
 			//PosTagNamedEntityRecognizer tagger = new PosTagNamedEntityRecognizer();
-			File modelFile = new File("src/main/java/hw1/HmmChunker");
+			File modelFile = new File("hw1/HmmChunker");
 			Chunker chunker = (Chunker) AbstractExternalizable.readObject(modelFile);
 			String docText = arg0.getDocumentText();
 			String[] sentences = docText.split("\n");
